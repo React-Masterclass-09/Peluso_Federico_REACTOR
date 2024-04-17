@@ -1,0 +1,29 @@
+.sidebar_custom{
+    box-shadow: 0px 2px 5px var(--primaryC);
+    height: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+.sidebar_text{
+    color: var(--accentC) !important;
+    line-height: 30px;
+    font-size:26px;  
+    font-weight: bold;
+}
+
+.scroll_box {
+    height: 310px;
+    overflow-y: scroll;
+}
+
+.scroll_box::-webkit-scrollbar {
+    width: 5px;
+    background-color: black;
+    border-radius: 1px;
+}
+
+.scroll_box::-webkit-scrollbar-thumb {
+    background-color: var(--accentC);
+    border-radius: 6px;
+}

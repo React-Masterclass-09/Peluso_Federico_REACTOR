@@ -1,0 +1,40 @@
+.card_custom{
+    
+    border: 1px solid transparent;
+    position: relative;
+    transition: 0.4%;
+
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+    z-index: 1;
+}
+
+.card_custom:hover{
+    border:2px solid var(--accentC);
+    background-color: var(--accentC);
+    border-radius: 6px;
+}
+.card_img{
+    height: 180px!important;
+    width: 100%;
+    transition: 0.4%;
+    border-radius: 6px;
+}
+.card_custom:hover > .car_img { /* se hai un filgio diretto con class card_img */
+    height: 180px;
+    width: 100%;
+    filter:brightness(50%);
+    
+}
+.card_text{
+    color: white !important;
+    line-height: 30px;
+    font-size:26px;  
+    font-weight: bold;
+}
+
+.card_custom:hover > .card_text{ /* se hai un filgio diretto con class card_text */
+    opacity: 1;
+    display:block;
+    
+}

@@ -1,0 +1,6 @@
+.profile_card{
+    background-color: var(--secondaryC);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--primaryC);
+    padding: 20px;
+}

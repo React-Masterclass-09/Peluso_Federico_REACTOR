@@ -1,0 +1,19 @@
+
+.custom_genre_link{
+    color: white !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.custom_genre_link:hover{
+    color: var(--accentC) !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.custom_genre_link_text{
+    line-height: 30px;
+    font-size:16px;  
+    font-weight: bold;
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Gestione dei colori palette di grigi https://calcolor.co/palette/942409461 */
+:root{
+    --primaryC: #333333;
+    --secondaryC: #eeeeee;
+    --accentC : #fd6a02;  /* colore di accento serve per mettere in rilievo dei singolo elementi */ 
+}
+/*
+body{
+    background-color: var(--primaryC);
+}
+*/
+/* Tutti i caratteri prendono questo font font */
+*{
+    font-family: "Montserrat", sans-serif;
+}
+h1,h2,h3, .h1, .h2, .h3{
+    font-family: "Montserrat", sans-serif;
+}
+
+.text-primaryC{
+    color: var(--primaryC);
+}
+.text-secondaryC{
+    color: var(--secondaryC);
+}
+.text-accentC{
+    color: var(--accentC);
+}
+
+.navbar{ /* mi definisco dei stili particolari per la navbar */
+    height: 75px;
+ /*   border-bottom: 1px solid; */
+    box-shadow: 2px 0px 5px var(--primaryC); /* mette l'ombra sotto la navbr */
+}
+li {
+    list-style-type: " ";
+  }
+li::before {
+    content: " ";
+    background: var(--accentC);
+    border-radius: 1ch;
+    padding-inline: 0.4ch;
+    margin-inline-end: 0.5ch;
+}
+
+h1{
+    color: white;
+    line-height: 30px;
+    font-size:26px;  
+    font-weight: bold;
+}
+h2{
+    color: white;
+    line-height: 15px;
+    font-size:10px;  
+    font-weight: bold;
+
+}
+h5{
+    color: white;
+    line-height: 30px;
+    font-size:26px;  
+    font-weight: bold;
+}
+h5::before {
+    content: " ";
+    background: var(--accentC);
+    border-radius: 1ch;
+    padding-inline: 0.4ch;
+    margin-inline-end: 0.5ch;
+}
+h51{
+    color: white;
+    line-height: 30px;
+    font-size:26px;  
+    font-weight: bold;
+}
+h51::before {
+    content: " ";
+    background: #000086;
+    border-radius: 1ch;
+    padding-inline: 0.4ch;
+    margin-inline-end: 0.5ch;
+}
+h6{
+    color: white;
+    line-height: 30px;
+    font-size:36px;  
+    font-weight: bold;
+}
+/* form registrazione e login */
+.auth_form{
+    position: relative;
+    background-color: var(--secondaryC);
+    color: var(--primaryC);
+    box-shadow: 2px 2px 5px var(--primaryC);
+    padding: 20px;
+}
+
+.auth_input{
+    height: 50px;
+    width: 100%;
+    padding: 0px 2px;
+    border: 3px  solid var(--primaryC);
+}
+
+.auth_btn{
+    background-color: var(--primaryC);
+    color: var(--secondaryC);
+    padding: 20px 30px;
+    display: block;
+    margin-left: auto; /* funziona solo con display block */
+}
+.platform {
+    color: var(--secondaryC);
+}
+
+
+.chat_section{
+    height: 50%;
+    border: 1px solid var(--accentC);
+    backdrop-filter: blur(6px);
+    margin-top: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.review_section{
+    height: 30vh;
+    border: 1px solid var(--accentC);
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.review_input{
+    height: 50px;
+    border: 1px solid var(--accentC);
+    width: 80%;
+    padding-left: 10px;
+}
+
+.review_btn{
+    background-color: var(--accentC);
+    color: var(--secondaryC);
+    height: 51px;
+    width: 15%;
+    margin-left: 10px;
+}
+
+.chat_input{
+    height: 50px;
+    border: 1px solid var(--accentC);
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.chat_btn{
+    background-color: var(--accentC);
+    color: var(--secondaryC);
+    height: 51px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.chat_img{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
