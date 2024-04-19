@@ -5,14 +5,13 @@ export default function AuthenticationLayout() {
     return (
         <>
             <Navbar />
-            <div className="container-fluid " >
+            <div className={ "container-fluid " + classes.body_outlet} >
                 <div className="row">
-                    <div className={ "col-12 col-md-10 py-4 " + classes.body_outlet} > 
+                    <div className={ "col-12 col-md-10 py-4 " }  > 
                         <Outlet />
                     </div>
                 </div>
             </div>
- 
-        </>
+      </>
     )
 }

@@ -31,10 +31,30 @@
     line-height: 30px;
     font-size:26px;  
     font-weight: bold;
+    text-decoration: none !important;
 }
 
 .card_custom:hover > .card_text{ /* se hai un filgio diretto con class card_text */
     opacity: 1;
     display:block;
     
+}
+
+.custom_detail_link{
+    color: white !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.custom_detail_link:hover{
+     
+    text-decoration: none;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.custom_detail_link_text{
+    line-height: 30px;
+    font-size:26px;  
+    font-weight: bold;
 }

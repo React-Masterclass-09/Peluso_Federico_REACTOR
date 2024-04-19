@@ -14,7 +14,7 @@ export default function Detail(){
                   <Detailview game={game} id={game.name}/>
                 </div>
             </div>
-        </div>
+       </div>
     )
 }
  

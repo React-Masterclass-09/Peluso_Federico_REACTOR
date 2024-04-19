@@ -7,8 +7,7 @@ export default function Card({game}){
             <div className={classes.card_custom}>
                 <img src={game.background_image} loading='lazy' alt='immagine gioco' className={'img-fluid '  + classes.card_img }/>
                 <div className="card-body">
-                    <div className={classes.card_text}>{game.name}</div>
-                    <Link  className="btn btn-primary" to={`/detail/${game.id}`}>Dettaglio</Link>
+                    <Link  to={`/detail/${game.id}` } className={' ' +classes.custom_detail_link+' '+classes.custom_detail_link_text}>{game.name}</Link>
                 </div>    
             </div>
         </div>

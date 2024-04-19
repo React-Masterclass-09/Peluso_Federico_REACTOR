@@ -7,7 +7,7 @@ export default function Layout(){
     return (
         <>
             <Navbar />
-            <div className="container-fluid " >
+            <div className={ "container-fluid " + classes.body_outlet} >
                 <div className="row">
                     <div className={"col-12 col-md-2 px-0 " + classes.body_sidebar} > 
                         <Sidebar />
@@ -16,6 +16,7 @@ export default function Layout(){
                         <Outlet />
                     </div>
                 </div>
+            
             </div>
             
         </>

@@ -3,7 +3,7 @@
 
 /* Gestione dei colori palette di grigi https://calcolor.co/palette/942409461 */
 :root{
-    --primaryC: #333333;
+    --primaryC: #000000;
     --secondaryC: #eeeeee;
     --accentC : #fd6a02;  /* colore di accento serve per mettere in rilievo dei singolo elementi */ 
 }
@@ -46,6 +46,11 @@ li::before {
     margin-inline-end: 0.5ch;
 }
 
+.rlogo { 
+width: 100px;
+height:100px;
+}
+
 h1{
     color: white;
     line-height: 30px;
@@ -72,19 +77,7 @@ h5::before {
     padding-inline: 0.4ch;
     margin-inline-end: 0.5ch;
 }
-h51{
-    color: white;
-    line-height: 30px;
-    font-size:26px;  
-    font-weight: bold;
-}
-h51::before {
-    content: " ";
-    background: #000086;
-    border-radius: 1ch;
-    padding-inline: 0.4ch;
-    margin-inline-end: 0.5ch;
-}
+ 
 h6{
     color: white;
     line-height: 30px;
@@ -101,19 +94,20 @@ h6{
 }
 
 .auth_input{
-    height: 50px;
+    height: 30px;
     width: 100%;
-    padding: 0px 2px;
-    border: 3px  solid var(--primaryC);
+    padding: 20px 20px;
+    border-radius: 10px;
 }
 
 .auth_btn{
-    background-color: var(--primaryC);
+
+    background-color: var(--accentC);
     color: var(--secondaryC);
-    padding: 20px 30px;
-    display: block;
-    margin-left: auto; /* funziona solo con display block */
-}
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+ }
 .platform {
     color: var(--secondaryC);
 }
@@ -152,22 +146,22 @@ h6{
 
 .chat_input{
     height: 50px;
+    border-radius: 10px;
     border: 1px solid var(--accentC);
     width: 100%;
     padding-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .chat_btn{
     background-color: var(--accentC);
     color: var(--secondaryC);
-    height: 51px;
-    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    width: 15%;
     margin-top: 10px;
 }
-
 .chat_img{
-    height: 40px;
-    width: 40px;
-    margin-left: 10px;
+  display: block;
+   width: 10%;
 }

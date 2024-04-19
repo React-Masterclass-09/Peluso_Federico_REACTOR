@@ -18,47 +18,55 @@ export default function Detailview(){
     return (
         <>
          <div  className={"platform"}>
-         {platforms.map( platform =>{
+         {platforms && platforms.map( platform =>{
             return ( 
                  <span key={platform.platform.name}  id={platform.platform.name}>{platform.platform.name} </span>
             )
             })}
          </div>
-         <div className="container-fluid" >
-             <div className="row row-cols-2" style={
-                {
-                    background: ` url(${game.background_image})`,
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    height:'500px'
-                }
-            } >
-                <div className="col" >
+    
+            <div className="container-fluid" >
+                 <div className="row" >
+                    
 
-                    <h6>{game.name}</h6>
+                     <div className="col-10" >
+                        <h6>{game.name}</h6>
+                    </div>
+                    <div className="col-2" >
+                        <HeartIcon game={game} key='1'/>
+                    </div>
                 </div>
-                 <div className="col" >
-                    <HeartIcon game={game} key='1'/>
-                 </div>
-                 
-            </div>   
-            <div className="row" >
-                <div className="col-12" >
-                 <h2> {game.description_raw}</h2>
+
+                 <div className="row row-cols-2" style={
+                    {
+                        background: ` url(${game.background_image})`,
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        height:'500px'
+                    }
+                } >
+                    
+                     
+                </div>   
+        
+                <div className="row" >
+                    <div className="col-12" >
+                     <h2> {game.description_raw}</h2>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div className="row" >
-                <div className="col" >
-                    <ReviewSection  game={game} key='2'/>
-                 </div>
-            </div>
-            <div className="row" >
-                <div className="col" >
-                    <LiveChat  game={game} key='3'/>
-                 </div>
-            </div>
+                <div className="row" >
+                    <div className="col" >
+                        <ReviewSection  game={game} key='2'/>
+                     </div>
+                </div>
+                <div className="row" >
+                    <div className="col" >
+                        <LiveChat  game={game} key='3'/>
+                     </div>
+                </div>
+            <br/><br/><br/><br/>
          </div>
         
         </>

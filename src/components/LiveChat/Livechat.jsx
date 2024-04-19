@@ -54,23 +54,26 @@ export default function LiveChat({game}){
     return (
         <>
             <div className="chat_section">
-
-
                 {messages && messages.map(message => {
                     return (
                         <div key={message.id}>
-                            <h51 className="lead">{message.message}</h51>
+                            <h5 className="lead">{message.message}</h5>
                             <div className="d-flex justify-content-end">
                                 <h2>{message.profiles.username}</h2>
-                                <img src={`${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/avatars/${message.profiles.avatar_url}`} className="rounded-circle chat_img" alt="" />
+                                <img src={`${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/avatars/${message.profiles.avatar_url}`} 
+                                    className="rounded-circle chat_img" 
+                                    alt="" />   
                             </div>
                             <hr />
                         </div>
                     )
                 })}
             </div>
-            <input type="text" className="chat_input" onChange={handleChange} />
-            <button className="chat_btn" onClick={handleClick}>Invia</button>
+            <div >
+                <input type="text" className="chat_input" onChange={handleChange} />
+                <button className="chat_btn" onClick={handleClick}>Invia</button>
+            </div>
+            
         </>
     )
 }

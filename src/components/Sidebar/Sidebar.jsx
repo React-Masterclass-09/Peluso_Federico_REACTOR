@@ -13,7 +13,7 @@ export default function Sidebar(){
             <div className={'wh-100 bg-secondary-C py-4 bd-links' + classes.sidebar_custom}>
             <h2 className={classes.sidebar_text}>Generi</h2>
             <GenreList geners={geners}/>
-            <h2  className={classes.sidebar_text}>Piattaforma</h2>
+            
             </div>
         </>
     )

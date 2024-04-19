@@ -45,18 +45,20 @@ export default function ReviewSection({ game }) {
             <div className="col-12 mt-3">
                 <h2 className="text-center">Si dice in giro </h2>
                 <div className="review_section">
-                    {reviews && reviews.map(review => {
+                    {reviews &&   reviews.map(review => {
+                        
                         return (
                             <div key={review.id}>
-                                <h2 className="lead">{review.profiles.username}</h2>
+                                    
+                                <h2>{review.profiles.username}</h2>
                                 <h5 className="lead">{review.review}</h5>
                                
                             </div>
                         )
                     })}
                 </div>
-                <input type="text" className="review_input" placeholder="Rispondi...." onChange={handleChange} />
-                <button className="review_btn" onClick={handleClick}>Invia</button>
+                <input type="text" className="chat_input" placeholder="Rispondi...." onChange={handleChange} />
+                <button className="chat_btn" onClick={handleClick}>Invia</button>
             </div>
 
         </>

@@ -6,11 +6,13 @@
     height: 28px;
     border-radius: 16px;
     padding: 0 12px 0 38px;
-  
+    text-align: right;
     background-size: 14px;
+    display: none;
 }
 .search_img{ /* classe specifica del text per la ricerca */
     padding: 0px 0px 0px 30px;
+    display: none;
 }
 
 .brand{ /* per */
@@ -19,13 +21,18 @@
     font-weight: 600;
     Letter-spacing: 3px;
 }
-
+.header2{
+    width: 100%;
+    border: 1px;
+    color: var(--primay);
+}
 .nav_link_custom{
-    font-size: 100;
-    font-weight: 100;
+    font-size: 200;
+    font-weight: 500;
     padding: 0px 0px 0px 30px;
     text-decoration: none;
     color: var(--primaryC);
+    
 }
 
 .nav_link_custom:hover{

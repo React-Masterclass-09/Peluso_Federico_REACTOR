@@ -33,15 +33,19 @@ export default function HeartIcon( {game} ){
             const { data , error } = await supabase
             .from('favourites')
             .insert([
-                {profile_id: profile.id, game_id: game.id, game_name: game.name }
+                {'profile_id': profile.id, 'game_id': game.id, 'game_name': game.name }
             ])
             .select();
-            console.log(error);
         }else{
+            let del = {'profile_id': profile.id,'game_id':game.id} ; 
+            
             const { error } = await supabase
             .from('favourites')
-            .delete('profile_id',profile.id)
-            .delete('game_id',game.id)
+            .delete()
+            .match(del);
+     
+            console.log('001');
+            console.log(error);
         }
     }
 

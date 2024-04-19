@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { UserContext } from "../../Contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 import routes from "../../routes/routes";
-
+import classes from '../../components/ProfileSelection/ProfileSelection.module.css';
 
 export default function SettingsForm(){
     const {  updateProfile } = useContext(UserContext);
@@ -29,19 +29,20 @@ export default function SettingsForm(){
     
     return (
         <>
-        <form className='auth_form' onSubmit={handleSubmit}>
-            <div className="mb-3">
+        
+        <form className='auth_form' onSubmit={handleSubmit} >
+            <div className={"mb-3 "+classes.profile_card} >
             <input type="text" placeholder="Nome" className="auth_input" name="first_name" onChange={handleChange} />
             </div>
-            <div className="nm-3">
+            <div className={"mb-3 "+classes.profile_card }>
             <input type="text" placeholder="Cognome" className="auth_input" name="last_name" onChange={handleChange} />
             </div>
-            <div className="mb-3">
-            <input type="text" placeholder="Username" className="auth_input" name="username" onChange={handleChange}  />
+            <div className={"mb-3 "+classes.profile_card }>
+                <input type="text" placeholder="Username" className="auth_input" name="username" onChange={handleChange}  />
             </div>
             <button type='submit' className='auth_btn'>Modifica</button>
         </form>
-        
+
         </>
     )
 
