@@ -33,7 +33,7 @@ export default function Detailview(){
                         <h6>{game.name}</h6>
                     </div>
                     <div className="col-2" >
-                        <HeartIcon game={game} key='1'/>
+                        {profile && <HeartIcon game={game} key='1'/>}
                     </div>
                 </div>
 
@@ -58,12 +58,12 @@ export default function Detailview(){
                 </div>
                 <div className="row" >
                     <div className="col" >
-                        <ReviewSection  game={game} key='2'/>
+                        {profile && <ReviewSection  game={game} key='2'/>}
                      </div>
                 </div>
                 <div className="row" >
                     <div className="col" >
-                        <LiveChat  game={game} key='3'/>
+                        {profile && <LiveChat  game={game} key='3'/>}
                      </div>
                 </div>
             <br/><br/><br/><br/>

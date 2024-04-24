@@ -26,7 +26,7 @@ export default function SignInForm(){
     )
     const handleSubmit = async (e)=>{
         e.preventDefault(); // evita il ricarica della pagina
-        await signUp(data);
+        await signUp(form);
         navigate(routes.home);
     }
 

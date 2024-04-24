@@ -38,6 +38,7 @@ export function UserContextProvider({children}){
     }
 
     const signUp= async( newUser )=>{
+
         const { error } = await supabase.auth.signUp(newUser);
         await getUser();
      
